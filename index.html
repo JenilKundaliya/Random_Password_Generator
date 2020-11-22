@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            height: 100vh;
+            width: 100%;
+            background: url('./Assets/black-background_00313351.jpg') ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+        }
+        h1{
+            color: whitesmoke;
+            font-size: 60px;
+        }
+        .container{
+            width: 30%;
+            height: 300px;
+            background-color: pink;
+            box-shadow: 0px 5px 10px grey;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .inner{
+width: 80%;
+height: 80%;
+background-color: white;
+/* border:2px solid black; */
+box-shadow: 0px 5px 10px gray;
+
+
+        }
+      input{
+          width: 90%;
+          padding: 7px 5px;
+          margin: 7px 8px;
+          border:none;
+          border-bottom: 3px solid red;
+      }
+      input:focus{
+         outline: none;
+          /* border-bottom:2px solid rgb(119, 103, 103); */
+          border-bottom: 3px solid red;
+          box-shadow: 2px 0px 6px grey;
+      }
+      span{
+          margin: 5px 10px;
+        
+      }
+      #para{
+          margin: 5px 0px;
+      }
+      #strong{
+          display:none;
+      }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <h1>Random Password Generator</h1>
+
+        <div class="container">
+            <div class="inner">
+
+                <div>
+                <input type="text" id="inp-pass" placeholder="Enter New Password"><br>
+
+                </div>
+                <div>
+
+                    <span id="strong">Strong Password:-</span>
+                    <span id="para"></span>
+                </div>
+                <!-- <button id="submit-btn">Submit</button> -->
+            </div>
+        </div>
+    </header>
+    <script src="./JS/index.js"> </script>
+    <!-- <script src="/JS/temp.js"> </script> -->
+</body>
+</html>
